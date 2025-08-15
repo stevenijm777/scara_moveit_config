@@ -1,0 +1,9 @@
+# Default initial positions for Esamble_Sencillo_gripper's ros2_control fake system
+
+initial_positions:
+  Gripper_Left_Joint: 0
+  Gripper_Right_Joint: 0
+  Prismatic_1_Joint: 0
+  Revolute_1_Jint: 0
+  Revolute_2_Joint: 0
+  Revolute_3_Joint: 0

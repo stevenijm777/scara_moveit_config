@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="Esamble_Sencillo_gripper">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- Import Esamble_Sencillo_gripper urdf file -->
+    <xacro:include filename="$(find scara_description)/urdf/Esamble_Sencillo_gripper.urdf" />
+
+    <!-- Import control_xacro -->
+    <xacro:include filename="Esamble_Sencillo_gripper.ros2_control.xacro" />
+
+
+    <xacro:Esamble_Sencillo_gripper_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+
+</robot>

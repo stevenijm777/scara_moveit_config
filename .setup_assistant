@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: scara_description
+    relative_path: urdf/Esamble_Sencillo_gripper.urdf
+  srdf:
+    relative_path: config/Esamble_Sencillo_gripper.srdf
+  package_settings:
+    author_name: Steven Martinez Jara
+    author_email: stemjara@espol.edu.ec
+    generated_timestamp: 1754881237
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
